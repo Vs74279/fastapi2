@@ -6,7 +6,7 @@ from database import SessionLocal, engine
 import models
 import schemas
 from hashing import Hash
-from crud import  authenticate_user, change_password, delete_user
+from crud import create_user, authenticate_user, change_password, delete_user
 
 models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
